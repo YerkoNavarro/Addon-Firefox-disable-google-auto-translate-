@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Disable Auto Translate",
+  "version": "1.0",
+  "description": "Desactiva la traducción automática en Firefox",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "host_permissions": [
+    "*://*.translate.goog/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
