@@ -1,4 +1,8 @@
-# Disable Google Auto Translate — Firefox Addon
+<div align="center">
+  <img src="circle-image128x128.png" alt="Icono del proyecto">
+
+  # Disable Google Auto Translate — Firefox Addon
+</div
  
 > ⚠️ This is an early-stage project. Expect bugs and breaking changes.
  
