@@ -3,6 +3,16 @@
   "name": "Disable Auto Translate",
   "version": "1.0",
   "description": "Desactiva la traducción automática en Firefox",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "disable-auto-translate@yerko.firefox",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["none"],
+        "optional": []
+      }
+    }
+  },
   "permissions": [
     "webRequest",
     "webRequestBlocking"
@@ -19,7 +29,6 @@
     "48": "circle-image48x48.png",
     "128": "circle-image128x128.png"
   },
-
   "action": {
     "default_icon": {
       "16": "circle-image16x16.png",

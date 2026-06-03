@@ -24,11 +24,11 @@ function cleanGoogleTranslateUrl(translatedUrl) {
 
 
 browser.webRequest.onBeforeRequest.addListener(
-  async function(details) {
+  function(details) {
     const clean = cleanGoogleTranslateUrl(details.url);
     
     
-    console.log('Redirigiendo:', details.url, '→', clean);
+    
     return { redirectUrl: clean };
     
     
