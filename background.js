@@ -26,13 +26,7 @@ function cleanGoogleTranslateUrl(translatedUrl) {
 browser.webRequest.onBeforeRequest.addListener(
   function(details) {
     const clean = cleanGoogleTranslateUrl(details.url);
-    
-    
-    
     return { redirectUrl: clean };
-    
-    
-  
   },
   { urls: ["*://*.translate.goog/*"] },
   ['blocking']
