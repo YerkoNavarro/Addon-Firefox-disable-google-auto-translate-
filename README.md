@@ -4,7 +4,7 @@
   # Disable Google Auto Translate — Firefox Addon
 </div
  
-> ⚠️ This is an early-stage project. Expect bugs and breaking changes.
+
  
 Firefox extension that automatically redirects Google Translate URLs (`translate.goog`) back to the original site, without translation.
  
