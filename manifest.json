@@ -12,5 +12,18 @@
   ],
   "background": {
     "scripts": ["background.js"]
+  },
+  "icons": {
+    "16": "circle-image16x16.png",
+    "32": "circle-image32x32.png",
+    "48": "circle-image48x48.png",
+    "128": "circle-image128x128.png"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "circle-image16x16.png",
+      "32": "circle-image32x32.png"
+    }
   }
 }

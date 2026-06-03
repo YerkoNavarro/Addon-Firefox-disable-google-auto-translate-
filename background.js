@@ -22,31 +22,17 @@ function cleanGoogleTranslateUrl(translatedUrl) {
   return toHttps.toString();
 }
 
-/* desactivado por rendimiento y por respuesta de servidor que no acepte la peticion
-async function isUrlValid(url) {
-  try {
-    // verificar la existencia sin descargar todo el contenido
-    const response = await fetch(url, { method: 'HEAD', cache: 'no-cache' });
-    return response.ok;
-  } catch (error) {
-    console.error('Error verificando URL:', url, error);
-    return false;
-  }
-}
-*/
 
 browser.webRequest.onBeforeRequest.addListener(
   async function(details) {
     const clean = cleanGoogleTranslateUrl(details.url);
     
-    //const isValid = await isUrlValid(clean);
-    //if (isValid) {
+    
     console.log('Redirigiendo:', details.url, '→', clean);
     return { redirectUrl: clean };
-    //}
     
-    //console.log('URL original no válida o inaccesible, cancelando redirección.');
-    //return {}; // No redirige si no es válida
+    
+  
   },
   { urls: ["*://*.translate.goog/*"] },
   ['blocking']
