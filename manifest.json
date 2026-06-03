@@ -8,8 +8,7 @@
     "webRequestBlocking"
   ],
   "host_permissions": [
-    "*://*.translate.goog/*",
-    "<all_urls>"
+    "*://*.translate.goog/*"
   ],
   "background": {
     "scripts": ["background.js"]
