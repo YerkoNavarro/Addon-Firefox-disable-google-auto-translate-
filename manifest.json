@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Disable Auto Translate",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Desactiva la traducción automática en Firefox",
   "browser_specific_settings": {
     "gecko": {
