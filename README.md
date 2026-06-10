@@ -21,10 +21,9 @@ https://www.oreilly.com/library/view/...
  
 ## Installation
  
-1. Download or clone this repository
-2. Open Firefox and go to `about:debugging#/runtime/this-firefox`
-3. Click **"Load Temporary Add-on"**
-4. Select the `manifest.json` file
+1. Open Firefox and go to: https://addons.mozilla.org/en-US/firefox/addon/skip-translate-pages/
+2. Click **"Add to Firefox"**
+
 ## Files
  
 ```
