@@ -25,8 +25,13 @@ function cleanGoogleTranslateUrl(translatedUrl) {
 
 browser.webRequest.onBeforeRequest.addListener(
   function(details) {
-    const clean = cleanGoogleTranslateUrl(details.url);
-    return { redirectUrl: clean };
+    try {
+      const clean = cleanGoogleTranslateUrl(details.url);
+      return { redirectUrl: clean };
+    } catch (e) {
+      console.error("Disable Google Translate: error processing", details.url, e);
+      return undefined;
+    }
   },
   { urls: ["*://*.translate.goog/*"] },
   ['blocking']
